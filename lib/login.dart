@@ -1,4 +1,6 @@
+import 'package:aplikasi_pegawai/dashboard.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -50,7 +52,7 @@ class _loginState extends State<login> {
             CircleAvatar(
               radius: 100,
               backgroundImage: NetworkImage(
-                  'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWhrazkwemR6dXQ0M2E5aWF4d29qOWplc2R2OXVhd2doYmxubHMwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M8xmO5ZcLPtAY/giphy.webp'),
+                  'https://media1.tenor.com/m/YS05rtOt28IAAAAC/anthony-manchester-united.gif'),
             ),
             SizedBox(
               height: 20,
@@ -80,7 +82,7 @@ class _loginState extends State<login> {
             ),
             ElevatedButton(
               onPressed: () {
-                print('ini tombol masuk');
+                Get.offAll(Dashboard());
               },
               style: ElevatedButton.styleFrom(
                 minimumSize: Size.fromHeight(50),
